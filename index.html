@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation API</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>SIGN UP</h1>
+        <form novalidate>
+            <div class="para">
+                <label for="mail">
+                    <img src="mail_FILL0_wght400_GRAD0_opsz24.svg" alt="mail image">
+                    <input type="email" id="mail" name="mail" required minlength="10" placeholder="Email">
+                    <span id="validMail" class="notvalid"></span>
+                </label>
+            </div>
+            <div class="para">
+                <label for="country">
+                    <img src="flag_FILL0_wght400_GRAD0_opsz24.svg" alt="flag image">
+                    <input type="text" id="country" name="country" required minlength="3" placeholder="Country">
+                    <span id="validCountry" class="notvalid"></span>
+                </label>
+            </div>
+            <div class="para">
+                <label for="zip">
+                    <img src="contact_mail_FILL0_wght400_GRAD0_opsz24.svg" alt="zipcode image">
+                    <input type="text" id="zip" name="zip" required minlength="5" placeholder="Zip Code">
+                    <span id="validZip" class="notvalid"></span>
+                </label>
+            </div>
+            <div class="para">
+                <label for="psw">
+                    <img src="key_FILL0_wght400_GRAD0_opsz24.svg" alt="key image">
+                    <input type="text" id="psw" name="psw" required minlength="6" placeholder="Password">
+                    <span id="validPass" class="notvalid"></span>
+                </label>
+            </div>
+            <div class="para">
+                <label for="confPsw">
+                    <img src="passkey_FILL0_wght400_GRAD0_opsz24.svg" alt="confirmation image">
+                    <input type="password" id="confPsw" name="confPsw" required minlength="6" placeholder="Confirm Password">
+                    <span id="validConfirmation" class="notvalid"></span>
+                </label>
+            </div>
+            <div class="error">
+                <span aria-live="polite"></span>
+            </div>
+            <button>Register</button>
+        </form>
+    </div>
+    <footer>
+        <p>Developed by</p><a href="https://github.com/minduwin" target="_blank">minduDev</a>
+        <span>- Photo by Valdemaras D. on Pexels</span>
+    </footer>
+
+    <script type="module" src="form.js"></script>
+</body>
+</html>
